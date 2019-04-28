@@ -13,6 +13,8 @@ The tutorial covers:
 * Store image metadata in Azure Cosmos DB.
 	* create a CosmosDB acount (CosmosDB emulator can also be used for local testing)
 	* create **imagesdb** database and **images** collection inside this database
+	* when image is resized, image metadata is saved in CosmosDB using an output binding
+	* HTTP Trigger function **GetImages** reads all metadatas from CosmosDB
 * Use Cognitive Services Vision API to auto-generate image captions.
 * Use Azure Active Directory to secure the web app by authenticating users.
 
